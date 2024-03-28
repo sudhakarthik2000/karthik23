@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .md{
+                height: 100px;
+                width: 100px;
+                border: 2px solid black;
+                background-color: bisque;
+            
+
+            }
+            .transform1:active~.md{
+                transform: translatex(100px);
+                background-color: red;
+
+            }
+            .transform2:active~.md{
+                background-color:maroon;
+                transform: translateY(100px);
+            }
+            .transform3:active~.md{
+                background-color: aqua;
+                transform: scalex(-1);
+
+            }
+            .transform4:active~.md{
+                background-color: aqua;
+                transform: scaley(-1);
+            }
+            .transform5:active~.md{
+                background-color: palevioletred;
+                transform: skewx(60deg);
+            }
+            .transform6:active~.md{
+                background-color: palevioletred;
+                transform: skewy(30deg);
+            }
+            .transform7:active~.md{
+                background-color: aqua;
+                transform: perspective(300px) scale(1.5)rotateX(60deg);
+            }
+            .transform8:active~.md{
+                background-color: paleturquoise;
+                transform:perspective(200px) scale(1.5)rotateY(40deg);
+            }
+            h3::first-letter{
+                color: rgb(132, 17, 189);
+            }
+            h3::selection{
+                color:crimson;
+            }
+            h3::first-line{
+                color:magenta;
+                
+            }
+            /* h3::before{
+                content:"Added";
+            } */
+            h3::after{
+                content: "....";
+            }
+
+
+
+
+
+
+        </style>
+    </head>
+    <body style="background-color: aqua;">
+        <center>
+    <h3> 1.Transform translate</h3>
+        <input type="radio" class="transform1">X-axis<br>
+        <input type="radio" class="transform2">Y-axis<br>
+    <h3>2.Transform Scale</h3>
+        <input type="radio" class="transform3">X-axis <br>
+        <input type="radio" class="transform4">Y-axis <br> 
+    <h3>3.Transform Skew</h3>
+        <input type="radio" class="transform5">X-axis <br> 
+        <input type="radio" class="transform6">Y-axis <br> 
+    <h3>4.Transform perspective</h3>
+        <input type="radio" class="transform7">X-axis <br> 
+        <input type="radio" class="transform8">Y-axis <br> 
+
+        <div class="md"></div>
+
+            
+
+    </center>
+
+
+  
+
+    </body>
+</html>
